@@ -4,7 +4,8 @@
 	align-items: center;
 }
 
-.piece {
+.pieceModel,
+.pieceUser {
 	/* border: 1px solid green; */
 	width: 150px;
 	height: 250px;
@@ -19,23 +20,43 @@
 .dot {
 	width: 30px;
 	height: 30px;
-	border: 2px solid rgb(240,240,240);
+	border: 2px solid rgb(240, 240, 240);
 	display: inline-block;
 	margin: 13px;
 	border-radius: 50%;
-	box-shadow: 4px 4px 4px rgba(66, 65, 65, 0.5);
+	box-shadow: 6px 6px 4px rgba(40, 40, 40, 0.5);
 }
 
-.notdot{
-   width: 30px;
+.notdot {
+	width: 30px;
 	height: 30px;
-	border: 2px solid rgb(240,240,240);
+	border: 2px solid rgb(211, 211, 211);
 	display: inline-block;
 	margin: 13px;
 	border-radius: 50%;
 	/* box-shadow: 4px 4px 4px rgba(66, 65, 65, 0.5); */
 }
 
-.disabled{
-   pointer-events: none;
+.disabled {
+	pointer-events: none;
+}
+
+#check {
+	border: 1px solid rgb(211, 211, 211);
+	margin: 1vh;
+	padding: 1vh;
+	border-radius: 10%;
+	box-shadow: 4px 4px 6px rgb(60, 60, 60, 0.5);
+	cursor: pointer;
+}
+
+#score {
+
+	display: flex;
+	align-items: center;
+
+}
+
+#scoreString{
+	margin: 2vh;
 }
