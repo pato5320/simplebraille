@@ -35,6 +35,7 @@ let index;
 let alphabet = 'abcdefghijklmnopqrstuvwxyz'
 let model;
 let user;
+let letra;
 
 console.log('letter ' + alphabet[index])
 localStorage.setItem('score', '0')
@@ -113,4 +114,6 @@ function resetNumber(){
     model = letters[alphabet[index]]
     user = letters['nothing']
     modelIndex = 0
+    letra = document.getElementById('letra')
+    letra.innerHTML = 'letra actual: ' + alphabet[index]
 }
